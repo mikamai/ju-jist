@@ -9,5 +9,5 @@ def call(env)
   [200, {}, [contents.read]]
 end
 
-use Rack::Static, urls: %w[/gist-runner.rb], index: 'index.html'
+use Rack::Static, urls: %w[/gist-runner.rb /favicon.ico], index: 'index.html'
 run self
