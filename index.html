@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+  body               { font-family: sans-serif; }
+  input, label       { font-size: 1.2em; display: block; }
+  input[type="text"] { width: 50%; padding: 0.5em; }
+  footer             { color: #555; margin-top:2em; }
+  </style>
+</head>
+<body>
+<header><h1>Gist Runner!</h1></header>
+
+<form>
+  <label for="gist_id">Put here your gist id:</label>
+  <input type="text" id="gist_id" placeholder="e.g. 88a4554653df42a6f7c3">
+  <input type="submit" value="open" style="padding:2em">
+</form>
+
+<script src="http://cdn.opalrb.org/opal/current/opal.js"></script>
+<script src="http://cdn.opalrb.org/opal/current/native.js"></script>
+<script src="http://cdn.opalrb.org/opal/current/opal-parser.js"></script>
+<script type="text/ruby" src="./gist-runner.rb"></script>
+
+<footer>
+  MIT-LICENSE, built by <a href="http://elia.schito.me">Elia Schito</a>
+</footer>
+</body>
+</html>

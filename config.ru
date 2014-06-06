@@ -7,4 +7,5 @@ def call(env)
   [200, {}, open("https://gist.githubusercontent.com/elia/#{gist_id}/raw/#{file}")]
 end
 
+use Rack::Static, urls: %w[/gist-runner.rb], index: 'index.html'
 run self
